@@ -7,23 +7,23 @@ Our client is trying to launch a calorie counter as a tool for their customers t
 You can find the code for the backend API in the `./calorie-counter-api` directory. We are using postgresql instead of sqlite for this project so **make sure you have that installed**. Check that it works by running `psql` in your terminal. 
 Finish setting up your app by running the following commands:
 
-* `$ cd ./calorie-counter-api`
-* `$ bundle install`
-* `$ rails db:create`
-* `$ rails db:migrate`
-* `$ rails db:seed`
+√* `$ cd ./calorie-counter-api`
+√* `$ bundle install`
+√√√* `$ rails db:create`
+√* `$ rails db:migrate`
+√√* `$ rails db:seed`
 
 As far as CRUD goes, the backend should have everything you need to `create`, `read` and `update` and `delete`. Still, we're counting on your abilities as a fullstack dev to figure out how the backend works by looking at the codebase.
 
 Take some time to understand the HTML layout that our previous frontend dev has already set up. For CSS library, the previous dev chose [UIkit](https://getuikit.com/). All those extra classes you see are for styling purposes. Feel free to add additional classes/ids at your discretion. *We would advise against removing things from the format of the current setup without good reasons.*
 
----
+
 
 ### Here are the deliverables:
 We want a place for users to keep track of their caloric intake.
-* Remove boiler-plate `<li>` tags and render `li.calories-list-item` elements with fetch response from backend API.
-* A user can record a new calorie intake which will be *prepended* to the list with pessimistic rendering.
-  * To keep the styling consistent, make sure the list-item you are prepending has the following format (you may add additional attributes at your discretion):
+* √√√Remove boiler-plate `<li>` tags and render `li.calories-list-item` elements with fetch response from backend API.
+* √√√A user can record a new calorie intake which will be *prepended* to the list with pessimistic rendering.
+  * √√√To keep the styling consistent, make sure the list-item you are prepending has the following format (you may add additional attributes at your discretion):
   ```html
    <li class="calories-list-item">
       <div class="uk-grid">
@@ -41,8 +41,8 @@ We want a place for users to keep track of their caloric intake.
       </div>
     </li>
   ```
-  * Each time an entry is made in the list, calculate the sum of all the calories and set this as the `value` attribute of the `#progress-bar` element.
-* A user can delete a calorie intake entry by clicking the respective trash icon. You decide between optimistic or pessistic rendering.
+  * √√Each time an entry is made in the list, calculate the sum of all the calories and set this as the `value` attribute of the `#progress-bar` element.
+* √√√A user can delete a calorie intake entry by clicking the respective trash icon. You decide between optimistic or pessistic rendering.
 * When clicking the pencil icon, a modal will appear.
   * This modal should contain a form pre-populated with the information from the respective calorie-entry.
   * clicking anywhere outside the modal will cause the modal to disappear.
